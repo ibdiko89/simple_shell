@@ -13,9 +13,9 @@
 #define END_OF_FILE -2
 #define EXIT -3
 
-/* defined Global environemnt */
+/* definition of  Global environemnt */
 extern char **environ;
-/* definined Global program name */
+/* definition of  Global program name */
 char *name;
 /* defined Global history counter */
 int hist;
@@ -34,7 +34,7 @@ typedef struct list_s
 /**
  * struct builtin_s - A new struct type defining builtin commands.
  * @name: The name of the builtin command.
- * @f: A function pointer that has been used for  the builtin command's function.
+ * @f: A pointer that has been used for  the builtin command's function.
  */
 typedef struct builtin_s
 {

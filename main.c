@@ -17,7 +17,7 @@ int main(int ac, char **av)
 		: "=r" (fsts)
 		: "r" (fsts));
 
-	if (ac == 2)
+	if (ac  == 2)
 	{
 		fsts = open(av[1], O_RDONLY);
 		if (fsts == -1)
