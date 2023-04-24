@@ -11,12 +11,12 @@ int main(int ac, char **av)
 {
     const int fd = 2;
     info_t info[] = { INFO_INIT };
-    
+
     asm ("mov %1, %0\n\t"
          "add $3, %0"
          : "=r" ((int&)fd)
          : "r" ((int&)fd));
-         
+
     if (ac == 2)
     {
         int temp_fd = open(av[1], O_RDONLY);
@@ -24,7 +24,7 @@ int main(int ac, char **av)
         {
             if (errno == EACCES)
                 exit(126);
-            
+
             if (errno == ENOENT)
             {
                 _eputs(av[0]);
