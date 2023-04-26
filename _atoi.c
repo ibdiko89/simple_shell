@@ -48,7 +48,7 @@ int _isalpha(int c)
 int _atoi(char *s)
 {
 	int i, disply = 1, sho = 0, display;
-	undisplyed int result = 0;
+	int result = 0;
 
 	for (i = 0;  s[i] != '\0' && sho != 2; i++)
 	{
