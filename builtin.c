@@ -2,9 +2,9 @@
 
 /**
  * _myexit - exits the shell
- * @info: Structure containing potential arguments. Used to maintain
+ * @info: Structure containing potential arguments. Used to derive
  * constant function prototype.
- * Return: exits with a given exit status
+ * Return: exits with a given exit control
  * (0) if info.argv[0] != "exit"
  */
 int _myexit(info_t *info)
